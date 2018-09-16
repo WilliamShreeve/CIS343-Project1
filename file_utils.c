@@ -28,7 +28,7 @@ int read_file(char* filename, char **buffer){
 
 	//Opens file for read, checks for valid file
 	if((fp = fopen(filename, "r")) == NULL){
-		fprintf(stderr, "Invalid file name");
+		fprintf(stderr, "Invalid file name\n");
 		exit(1);
 	}
 	
@@ -60,7 +60,7 @@ int write_file(char* filename, char *buffer, int size){
 
 	//Opens file for write, checks for valid file
 	if((fp = fopen(filename, "w")) == NULL){
-		fprintf(stderr, "Invlaid file name");
+		fprintf(stderr, "Invlaid file name\n");
 		exit(1);
 	}
 

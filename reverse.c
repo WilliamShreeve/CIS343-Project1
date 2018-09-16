@@ -40,8 +40,8 @@ int main(int argc, char** argv){
 	}
 
 	//Calls write_file to write reversed array into output file
-	if(write_file(argv[2], fileContR, sizeOfFile) != 0){
-		fprtinf(stderr, "Error: File not written.");
+	if(write_file(argv[2], fileContR, sizeOfFile) != 1){
+		fprintf(stderr, "Error: File not written.");
 	}
 
 		
